@@ -1,0 +1,64 @@
+.user-page {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    padding-top: 100px;
+}
+
+.user-page .back {
+    color: black;
+    text-align: end;
+    margin-bottom: 50px;
+}
+.user-page .back:hover {
+    transition: .3 all ease;
+    color: #069478;
+    text-decoration: underline;
+}
+
+/* Posts  */
+.user-page .posts {
+    width: 70%;
+    padding: 0;
+}
+.user-page .posts p span{
+    font-weight: bold;
+}
+
+/* Comments  */
+.user-page .comments {
+    width: 70%;
+    margin: 50px 0;
+}
+.user-page .comments p:nth-child(1) {
+    font-weight: bold;
+}
+.user-page .comment p{
+    color: #646b74;
+}
+
+/* User info  */
+.users {
+    background-color: #303846;
+    padding: 5px 0;
+}
+.users .user p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
+    color: #EBEDF0;
+}
+.users .user p:hover {
+    transition: .3s all ease;
+    cursor: pointer;
+    color: #09D3AC;
+}
+
+/* Loader  */
+.loader {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,18 @@
+.posts {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.posts .card {
+    height: 225px;
+    overflow-y: scroll;
+
+}
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+}

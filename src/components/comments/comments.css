@@ -1,0 +1,39 @@
+/* Comments  */
+.card-comments {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.card-comments:hover {
+    transition: .3s all ease;
+    color: #069478;
+}
+.card-comments p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Commetns Block  */
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    width: fit-content;
+}
+
+/* Comment  */
+.comment {
+    margin-bottom: 10px;
+}
+.comment p {
+    margin: 0;
+    padding: 0;
+}
+.comment p:nth-child(1) {
+    font-weight: 600;
+    padding-bottom: 5px;
+}

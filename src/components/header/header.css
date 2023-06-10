@@ -1,0 +1,140 @@
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #303846;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    z-index: 1;
+}
+
+/* Searchbar Input  */
+.header .searchbar {
+    border: 1px solid #09D3AC;
+    padding: 5px 10px;
+    background-color: #EBEDF0;
+    border-radius: 5px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.header .searchbar .searchbar-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+
+/* Hambureger menu  */
+.header .hamburger-menu {
+    display: none;
+    padding: 5px 7px;
+    border: 1px solid #09D3AC;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.header .hamburger-menu:hover {
+    background-color: #09D3AC;
+    transition: all .5s ease;
+    
+}
+.header .hamburger-menu:hover .MuiSvgIcon-root {
+    color: #fff;
+}
+
+
+/* Header mune  */
+.header-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+.header-menu li {
+    color: #EBEDF0;
+
+}
+.header-menu li:hover {
+    cursor: pointer;
+    color: #09D3AC;
+    transition: .3s all ease;
+}
+
+/* Header icons  */
+.header .MuiSvgIcon-root {
+    font-size: 26px !important;
+    color: #09D3AC;
+}
+
+
+
+
+/* Responsive design  */
+@media(max-width: 1024px) {
+    .header {
+        padding: 20px 33px;
+    }
+    .header .hamburger-menu{
+        display: block;
+        transition: all .5s ease-in-out;
+    }
+
+    /* Header menu  */
+    .header-menu {
+       display: none;
+    }
+    .header-menu__active {
+        position: fixed;
+        display: block;
+        list-style: none;
+        background-color: #303846;
+        color: #EBEDF0;
+        left: 0;
+        top: 70px;
+        transition: all .5s ease-out;
+        width: 100%;
+    }
+
+    /* User info  */
+    .header-menu__active .user-info {
+        font-weight: bold;
+        color: #EBEDF0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-menu__active .user-info .username {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .header-menu__active .user-info .MuiSvgIcon-root {
+        color: #EBEDF0;
+    }
+
+    /* Header List  */
+    .header-menu__active li {
+        color: #EBEDF0;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        transition: all .5s ease;
+    }
+    .header-menu__active li:hover {
+        color: #09D3AC;
+        transition: all .5s ease;
+    }
+
+}
+
+
+@media(max-width: 600px) {
+    .header .searchbar {
+        width: 250px;
+    }
+}
